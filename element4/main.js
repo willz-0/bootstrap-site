@@ -5,7 +5,7 @@ const createScene = () => {
     const scene = new BABYLON.Scene(engine);
     scene.clearColor = new BABYLON.Color3(0.25, 0.25, 0.45);
 
-    /* ENABLE COLLISIONS + GRAVITY */
+    /* COLLISIONS + GRAVITY */
     scene.collisionsEnabled = true;
     scene.gravity = new BABYLON.Vector3(0, -0.4, 0);
 
@@ -25,7 +25,6 @@ const createScene = () => {
     );
     camera.setTarget(BABYLON.Vector3.Zero());
     camera.attachControl(canvas, true);
-
     camera.checkCollisions = true;
     camera.applyGravity = true;
     camera.ellipsoid = new BABYLON.Vector3(0.5, 1, 0.5);
@@ -38,7 +37,7 @@ const createScene = () => {
     );
     ground.checkCollisions = true;
 
-    /* PLAYER (CAPSULE) */
+    /* PLAYER */
     const player = BABYLON.MeshBuilder.CreateCapsule(
         "player",
         { height: 2, radius: 0.5 },
@@ -61,9 +60,35 @@ const createScene = () => {
     box.position = new BABYLON.Vector3(0, 0.75, 2);
     box.checkCollisions = true;
 
-    const boxMat = new BABYLON.StandardMaterial("boxMat", scene);
-    boxMat.diffuseTexture = new BABYLON.Texture("textures/wood.jpg", scene);
-    box.material = boxMat;
+    /* =========================
+       GUI – HEALTH BAR
+    ========================= */
+    const guiTexture =
+        BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+    const panel = new BABYLON.GUI.Rectangle();
+    panel.width = "220px";
+    panel.height = "30px";
+    panel.cornerRadius = 5;
+    panel.color = "white";
+    panel.thickness = 2;
+    panel.background = "black";
+    panel.top = "20px";
+    panel.left = "20px";
+    panel.horizontalAlignment =
+        BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    panel.verticalAlignment =
+        BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+
+    guiTexture.addControl(panel);
+
+    const healthBar = new BABYLON.GUI.Rectangle();
+    healthBar.width = "200px";
+    healthBar.height = "20px";
+    healthBar.background = "green";
+    panel.addControl(healthBar);
+
+    let health = 100;
 
     /* INPUT */
     const inputMap = {};
@@ -98,7 +123,6 @@ const createScene = () => {
         if (inputMap["a"]) moveVector.x -= speed;
         if (inputMap["d"]) moveVector.x += speed;
 
-        /* JUMP */
         if (inputMap[" "] && isGrounded) {
             verticalVelocity = jumpForce;
             isGrounded = false;
@@ -110,15 +134,21 @@ const createScene = () => {
         const oldY = player.position.y;
         player.moveWithCollisions(moveVector);
 
-        /* Ground check */
         if (player.position.y === oldY) {
             verticalVelocity = 0;
             isGrounded = true;
         }
 
-        /* Camera follows player */
+        /* Camera follows */
         camera.position.x = player.position.x;
         camera.position.z = player.position.z - 10;
+
+        /* Fake damage when touching box */
+        if (player.intersectsMesh(box, false)) {
+            health -= 0.2;
+            health = Math.max(health, 0);
+            healthBar.width = (health * 2) + "px";
+        }
     });
 
     return scene;

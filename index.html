@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first Bootstrap page</title>
+    <title>My First Bootstrap Page</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
             background-color: #f8f9fa;
         }
-
         .game-card img {
-            height: 240px;
+            height: 220px;
             object-fit: cover;
         }
     </style>
@@ -23,10 +22,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/game-icon.png" width="40" class="me-2">
-            My first Bootstrap page
-        </a>
+        <a class="navbar-brand" href="#">My First Bootstrap Page</a>
 
         <div class="navbar-nav ms-auto">
             <a class="nav-link" href="element1/index.html">Element 1</a>
@@ -41,65 +37,79 @@
 <!-- CONTENT -->
 <div class="container mt-5">
 
-    <h1 class="mb-4">My first Bootstrap page</h1>
+    <h1 class="mb-4">JavaScript Games Coursework</h1>
+
+    <p>
+        This website presents the development of a JavaScript game using Babylon.js.
+        Each section demonstrates a different technical element of 3D game development.
+    </p>
 
     <hr>
 
-    <div class="row mt-4 g-4">
+    <!-- DOCUMENTATION SECTION -->
+    <h2 class="mt-4">Element Documentation</h2>
 
-        <!-- SEKIRO -->
+    <ul>
+        <li>
+            <strong>Element 1 – Basic Scene:</strong>
+            Using Babylon.js, areas such as the camera setup and foundational 3D shapes, textures and different materials, distinct lighting,
+            and are demonstrated and explained.
+        </li>
+
+        <li>
+            <strong>Element 2 – Environment:</strong>
+            Demonstrates environment design using terrain, textures, skyboxes,
+            and scene decoration such as houses and vegetation.
+        </li>
+
+        <li>
+            <strong>Element 3 – Interaction:</strong>
+            Demonstrates importing an external player model, keyboard movement,
+            camera following, and collision interaction.
+        </li>
+
+        <li>
+            <strong>Element 4 – Logic:</strong>
+            Demonstrates logic within games areas such as different obstacles, collisions, GUI-based health bar and gravitational interactions.
+        </li>
+
+        <li>
+            <strong>Element 5 – Player Control:</strong>
+            Shows areas such as differnt gamelay states, input handling of users and scene switching within highly developed cotrol logic.
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- GAME CARDS -->
+    <div class="row mt-4">
+
         <div class="col-md-4">
-            <div class="card game-card h-100">
-                <img src="images/sekiro.jpg" class="card-img-top" alt="Sekiro">
+            <div class="card game-card">
+                <img src="images/sekiro.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Sekiro</h5>
-                    <p class="card-text">
-                        This section explores the foundational aspects of the project,
-                        including scene setup, lighting configuration, camera positioning,
-                        and basic mesh creation using Babylon.js.
-                    </p>
-                    <p class="card-text">
-                        It also introduces initial user interaction and demonstrates how
-                        a 3D environment is constructed and rendered in the browser.
-                    </p>
+                    <p class="card-text">Core mechanics and basic interaction.</p>
                 </div>
             </div>
         </div>
 
-        <!-- BLOODBORNE -->
         <div class="col-md-4">
-            <div class="card game-card h-100">
-                <img src="images/bloodborne.jpg" class="card-img-top" alt="Bloodborne">
+            <div class="card game-card">
+                <img src="images/bloodborne.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Bloodborne</h5>
-                    <p class="card-text">
-                        This section demonstrates user interaction and core game logic,
-                        including keyboard input handling, movement systems, collision
-                        detection, and real-time scene updates.
-                    </p>
-                    <p class="card-text">
-                        Game logic is processed each frame using Babylon.js observables,
-                        ensuring responsive and interactive gameplay mechanics.
-                    </p>
+                    <p class="card-text">Environment design and logic systems.</p>
                 </div>
             </div>
         </div>
 
-        <!-- ELDEN RING -->
         <div class="col-md-4">
-            <div class="card game-card h-100">
-                <img src="images/eldenring.jpg" class="card-img-top" alt="Elden Ring">
+            <div class="card game-card">
+                <img src="images/eldenring.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Elden Ring</h5>
-                    <p class="card-text">
-                        This section focuses on player control systems and camera behaviour,
-                        demonstrating how the camera dynamically follows player movement
-                        within a 3D environment.
-                    </p>
-                    <p class="card-text">
-                        These techniques help create a smoother and more immersive gameplay
-                        experience while maintaining clean and structured code.
-                    </p>
+                    <p class="card-text">Advanced player control and scene switching.</p>
                 </div>
             </div>
         </div>

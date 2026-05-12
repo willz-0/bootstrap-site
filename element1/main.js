@@ -78,6 +78,8 @@ const createScene = function () {
 const scene = createScene();
 
 engine.runRenderLoop(function () {
+    box.rotation.y += 0.01;
+sphere.rotation.x += 0.02;
     scene.render();
 });
 

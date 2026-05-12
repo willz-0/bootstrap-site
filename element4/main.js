@@ -86,6 +86,8 @@ const createScene = () => {
     healthBar.width = "200px";
     healthBar.height = "20px";
     healthBar.background = "green";
+    healthBar.horizontalAlignment =
+    BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
     panel.addControl(healthBar);
 
     let health = 100;

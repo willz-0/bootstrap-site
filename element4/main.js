@@ -144,11 +144,13 @@ const createScene = () => {
         camera.position.z = player.position.z - 10;
 
         /* Fake damage when touching box */
-        if (player.intersectsMesh(box, false)) {
-            health -= 0.2;
-            health = Math.max(health, 0);
-            healthBar.width = (health * 2) + "px";
-        }
+        const distanceToBox = BABYLON.Vector3.Distance(player.position, box.position);
+
+if (distanceToBox < 2.2) {
+    health -= 0.2;
+    health = Math.max(health, 0);
+    healthBar.width = (health * 2) + "px";
+}
     });
 
     return scene;

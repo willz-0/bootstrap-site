@@ -42,11 +42,19 @@ const createScene = function () {
     sky.material = skyMat;
 
     /* GROUND */
-    const ground = BABYLON.MeshBuilder.CreateGround(
-        "ground",
-        { width: 200, height: 200 },
+    const ground = BABYLON.MeshBuilder.CreateGroundFromHeightMap(
+         "ground",
+            "textures/valleygrass.png",
+        {
+             width: 200,
+        height: 200,
+        subdivisions: 100,
+        minHeight: 0,
+        maxHeight: 10
+        };
         scene
     );
+    
 
     const groundMat = new BABYLON.StandardMaterial("groundMat", scene);
     groundMat.diffuseTexture = new BABYLON.Texture(

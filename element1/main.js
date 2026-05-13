@@ -71,7 +71,10 @@ const createScene = function () {
     sphereMat.diffuseColor = new BABYLON.Color3(0.8, 0.2, 0.2);
     sphere.material = sphereMat;
     shadowGenerator.addShadowCaster(sphere);
-
+   scene.onBeforeRenderObservable.add(function () {
+   box.rotation.y += 0.01;
+     sphere.position.y = 2.5 + Math.sin(performance.now() * 0.003) * 0.4;
+});
     return scene;
 };
 

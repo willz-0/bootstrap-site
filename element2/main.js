@@ -15,7 +15,7 @@ const createScene = function () {
     );
     camera.attachControl(canvas, true);
     camera.lowerBetaLimit = 0.1;
-    camera.upperBetaLimit = Math.PI / 2.1;
+    camera.upperBetaLimit = Math.PI / 2.3;
     camera.lowerRadiusLimit = 20;
     camera.upperRadiusLimit = 150;
 

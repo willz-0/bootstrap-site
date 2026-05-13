@@ -86,7 +86,7 @@ const createScene = function () {
     housePositions.forEach(pos => {
         const house = BABYLON.MeshBuilder.CreateBox(
             "house",
-            { width: 6, height: 8, depth: 6 },
+            { width: 8, height: 6, depth: 8 },
             scene
         );
         house.position.set(pos.x, 4, pos.z);

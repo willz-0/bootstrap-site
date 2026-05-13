@@ -14,6 +14,10 @@ const createScene = function () {
         scene
     );
     camera.attachControl(canvas, true);
+    camera.lowerBetaLimit = 0.1;
+    camera.upperBetaLimit = Math.PI / 2.1;
+    camera.lowerRadiusLimit = 20;
+    camera.upperRadiusLimit = 150;
 
     /* LIGHT */
     new BABYLON.HemisphericLight(
@@ -74,7 +78,7 @@ const createScene = function () {
     housePositions.forEach(pos => {
         const house = BABYLON.MeshBuilder.CreateBox(
             "house",
-            { width: 8, height: 8, depth: 8 },
+            { width: 6, height: 8, depth: 6 },
             scene
         );
         house.position.set(pos.x, 4, pos.z);
@@ -115,7 +119,7 @@ const createScene = function () {
     trees.forEach(pos => {
         const tree = new BABYLON.Sprite("tree", treeManager);
         tree.position.set(pos.x, 10, pos.z);
-        tree.size = 20;
+        tree.size = 12;
     });
 
     const palms = [
@@ -126,7 +130,7 @@ const createScene = function () {
     palms.forEach(pos => {
         const palm = new BABYLON.Sprite("palm", palmManager);
         palm.position.set(pos.x, 12, pos.z);
-        palm.size = 24;
+        palm.size = 14;
     });
 
     return scene;

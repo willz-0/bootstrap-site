@@ -43,17 +43,17 @@ const createScene = function () {
 
     /* GROUND */
     const ground = BABYLON.MeshBuilder.CreateGroundFromHeightMap(
-         "ground",
-            "textures/valleygrass.png",
-        {
-             width: 200,
+    "ground",
+    "textures/valleygrass.png",
+    {
+        width: 200,
         height: 200,
         subdivisions: 100,
         minHeight: 0,
         maxHeight: 10
-        },
-        scene
-    );
+    },
+    scene
+);
     
 
     const groundMat = new BABYLON.StandardMaterial("groundMat", scene);

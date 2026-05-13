@@ -51,7 +51,7 @@ const createScene = function () {
         subdivisions: 100,
         minHeight: 0,
         maxHeight: 10
-        };
+        },
         scene
     );
     

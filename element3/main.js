@@ -125,6 +125,7 @@ if (distanceToBox < 3.5) {
   const pushDirection = box.position.subtract(player.position).normalize();
   box.position.addInPlace(pushDirection.scale(0.08));
 }
+        
   });
 
   return scene;

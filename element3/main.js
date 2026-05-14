@@ -112,7 +112,6 @@ box.material.diffuseColor = new BABYLON.Color3(1, 0, 0);
           const pushDirection = box.position.subtract(player.position).normalize();
          box.position.addInPlace(pushDirection.scale(0.08));
         
-      });
     }
   );
 

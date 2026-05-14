@@ -114,19 +114,19 @@ groundMat.diffuseTexture.vScale = 10;
         )
       );
 
-      scene.onBeforeRenderObservable.add(() => {
-        if (inputMap["w"]) player.moveWithCollisions(player.forward.scale(speed));
-        if (inputMap["s"]) player.moveWithCollisions(player.forward.scale(-speed));
-        if (inputMap["a"]) player.rotate(BABYLON.Vector3.Up(), -0.05);
-        if (inputMap["d"]) player.rotate(BABYLON.Vector3.Up(), 0.05);
+     scene.onBeforeRenderObservable.add(() => {
+  if (inputMap["w"]) player.moveWithCollisions(player.forward.scale(speed));
+  if (inputMap["s"]) player.moveWithCollisions(player.forward.scale(-speed));
+  if (inputMap["a"]) player.rotate(BABYLON.Vector3.Up(), -0.05);
+  if (inputMap["d"]) player.rotate(BABYLON.Vector3.Up(), 0.05);
+
   const distanceToBox = BABYLON.Vector3.Distance(player.position, box.position);
 
-if (distanceToBox < 3.5) {
-  const pushDirection = box.position.subtract(player.position).normalize();
-  box.position.addInPlace(pushDirection.scale(0.08));
-}
-        
-  });
+  if (distanceToBox < 3.5) {
+    const pushDirection = box.position.subtract(player.position).normalize();
+    box.position.addInPlace(pushDirection.scale(0.08));
+  }
+});
 
   return scene;
 };

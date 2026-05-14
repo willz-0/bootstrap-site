@@ -32,6 +32,7 @@ const createScene = function () {
   // COLLISIONS
   scene.gravity = new BABYLON.Vector3(0, -0.9, 0);
   scene.collisionsEnabled = true;
+  scene.enablePhysics();
 
   // GROUND
   const groundMat = new BABYLON.StandardMaterial("groundMat", scene);
@@ -46,6 +47,9 @@ const createScene = function () {
     scene
   );
   ground.material = groundMat;
+  groundMat.diffuseTexture.uScale = 10;
+groundMat.diffuseTexture.vScale = 10;
+  
   ground.checkCollisions = true;
 
   // COLLISION BOX
@@ -56,6 +60,12 @@ const createScene = function () {
   );
   box.position = new BABYLON.Vector3(5, 1.5, 0);
   box.checkCollisions = true;
+  box.physicsImpostor = new BABYLON.PhysicsImpostor(
+    box,
+    BABYLON.PhysicsImpostor.BoxImpostor,
+    { mass: 1, restitution: 0.2 },
+  scene
+):
 
   // PLAYER
   BABYLON.SceneLoader.ImportMesh(

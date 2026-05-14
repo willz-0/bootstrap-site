@@ -65,7 +65,7 @@ groundMat.diffuseTexture.vScale = 10;
     BABYLON.PhysicsImpostor.BoxImpostor,
     { mass: 1, restitution: 0.2 },
   scene
-):
+);
 
   // PLAYER
   BABYLON.SceneLoader.ImportMesh(

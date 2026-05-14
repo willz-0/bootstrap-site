@@ -40,6 +40,8 @@ const createScene = function () {
   const box = BABYLON.MeshBuilder.CreateBox("collisionBox", { size: 3 }, scene);
   box.position = new BABYLON.Vector3(5, 1.5, 0);
   box.checkCollisions = true;
+  box.material = new BABYLON.StandardMaterial("boxMat", scene);
+box.material.diffuseColor = new BABYLON.Color3(1, 0, 0);
 
   box.physicsImpostor = new BABYLON.PhysicsImpostor(
     box,

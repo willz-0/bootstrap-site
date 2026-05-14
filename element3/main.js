@@ -110,8 +110,11 @@ box.material.diffuseColor = new BABYLON.Color3(1, 0, 0);
 
         if (distanceToBox < 3.5) {
           const pushDirection = box.position.subtract(player.position).normalize();
-          box.position.addInPlace(pushDirection.scale(0.08));
-        }
+          box.physicsImpostor.applyImpulse(
+    pushDirection.scale(2),
+    box.getAbsolutePosition()
+);
+        
       });
     }
   );

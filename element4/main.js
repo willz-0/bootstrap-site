@@ -25,6 +25,10 @@ const createScene = () => {
     );
     camera.setTarget(BABYLON.Vector3.Zero());
     camera.attachControl(canvas, true);
+    camera.keysUp = [];
+camera.keysDown = [];
+camera.keysLeft = [];
+camera.keysRight = [];
     camera.checkCollisions = true;
     camera.applyGravity = true;
     camera.ellipsoid = new BABYLON.Vector3(0.5, 1, 0.5);

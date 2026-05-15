@@ -40,7 +40,7 @@ const createScene = () => {
 
 groundMat.diffuseTexture = new BABYLON.Texture(
 
-    "https://assets.babylonjs.com/environments/grass.jpg",
+    "../element3/textures/wood.jpg",
 
     scene
 
@@ -77,7 +77,7 @@ ground.material = groundMat;
     const boxMat = new BABYLON.StandardMaterial("boxMat", scene);
 
 boxMat.diffuseTexture = new BABYLON.Texture(
-    "https://assets.babylonjs.com/environments/wood.jpg",
+    "../element2/textures/wood.jpg",
     scene
 );
 

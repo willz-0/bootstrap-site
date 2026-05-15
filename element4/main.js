@@ -36,6 +36,21 @@ const createScene = () => {
         scene
     );
     ground.checkCollisions = true;
+    const groundMat = new BABYLON.StandardMaterial("groundMat", scene);
+
+groundMat.diffuseTexture = new BABYLON.Texture(
+
+    "https://assets.babylonjs.com/environments/grass.jpg",
+
+    scene
+
+);
+
+groundMat.diffuseTexture.uScale = 4;
+
+groundMat.diffuseTexture.vScale = 4;
+
+ground.material = groundMat;
 
     /* PLAYER */
     const player = BABYLON.MeshBuilder.CreateCapsule(
@@ -59,6 +74,14 @@ const createScene = () => {
     );
     box.position = new BABYLON.Vector3(0, 0.75, 2);
     box.checkCollisions = true;
+    const boxMat = new BABYLON.StandardMaterial("boxMat", scene);
+
+boxMat.diffuseTexture = new BABYLON.Texture(
+    "https://assets.babylonjs.com/environments/wood.jpg",
+    scene
+);
+
+box.material = boxMat;
 
     /* =========================
        GUI – HEALTH BAR

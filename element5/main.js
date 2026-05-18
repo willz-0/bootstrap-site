@@ -79,9 +79,11 @@ const createSceneB = () => {
     );
     sphere.position.y = 1;
 
-    scene.registerBeforeRender(() => {
-        sphere.rotation.x += 0.02;
-    });
+   scene.registerBeforeRender(() => {
+    sphere.rotation.x += 0.04;
+    sphere.rotation.y += 0.04;
+    sphere.position.y = 1 + Math.sin(Date.now() * 0.005);
+});
     const guiB = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UIB");
 
 const textB = new BABYLON.GUI.TextBlock();

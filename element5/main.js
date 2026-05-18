@@ -82,6 +82,16 @@ const createSceneB = () => {
     scene.registerBeforeRender(() => {
         sphere.rotation.x += 0.02;
     });
+    const guiB = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UIB");
+
+const textB = new BABYLON.GUI.TextBlock();
+
+textB.text = "SCENE B - Press 1 to switch back";
+textB.color = "yellow";
+textB.fontSize = 32;
+textB.top = "-40%";
+
+guiB.addControl(textB);
 
     return scene;
 };

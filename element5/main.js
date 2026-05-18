@@ -77,12 +77,12 @@ const createSceneB = () => {
         { diameter: 2 },
         scene
     );
-    sphere.position.y = 1;
+    sphere.position.y = 1.4;
 
    scene.registerBeforeRender(() => {
     sphere.rotation.x += 0.04;
     sphere.rotation.y += 0.04;
-    sphere.position.y = 1 + Math.sin(Date.now() * 0.005);
+    sphere.position.y = 1.4 + Math.sin(Date.now() * 0.005) * 0.5;
 });
     const guiB = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UIB");
 

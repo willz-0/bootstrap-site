@@ -58,6 +58,7 @@ Features:
 * Improved camera controls
 
 Final Scene: 
+![Element 2 Scene](https://github.com/willz-0/bootstrap-site/blob/main/YOUR-SCENE-IMAGE.png?raw=true)
 
 
 

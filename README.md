@@ -35,7 +35,7 @@ Scene Setup Code
 
 Babylon.js engine and scene setup with custom background colour.
 
-Camera and Lighting
+Camera and Lighting:
 
 ![Camera](./Screenshot%202026-05-20%20at%2023.41.45.png)
 

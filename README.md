@@ -59,7 +59,7 @@ Features:
 
 Final Scene
 
-![Element 2 Final Scene](./Screenshot%202026-05-21%20at%2000.09.06(1).jpeg)
+![Element 2 Final Scene](./element2-scene.jpg)
 
 Large outdoor environment created using terrain, houses, trees, and sky textures.
 

@@ -72,6 +72,22 @@ Sprites and Environment
 
 SpriteManager used for trees and environmental objects to improve performance.
 
+Element 3 – Interaction and Physics
+Aim:
+The aim of Element 3 was to implement collisions, physics, imported models, player movement, and object interaction.
+
+Features:
+
+* Physics engine
+* Follow camera
+* Imported player model
+* Collision systems
+* Keyboard movement
+* Pushable physics box
+
+Final Scene:
+
+
 
 
 

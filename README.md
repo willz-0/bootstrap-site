@@ -22,7 +22,7 @@ Technologies Used:
 
 * Scene Setup
 The scene begins by creating a canvas and Babylon engine:
-https://github.com/willz-0/bootstrap-site/edit/main/README.md#:~:text=at%2020.08.14.png-,Screenshot,-2026%2D05%2D19
+
 
 
 

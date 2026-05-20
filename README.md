@@ -29,6 +29,13 @@ Final Scene:
 ![Final Scene](./Screenshot%202026-05-20%20at%2023.36.40.png)
 
 
+Scene Setup Code
+
+![Scene Setup](./Screenshot%202026-05-20%20at%2023.41.00.png)
+
+Babylon.js engine and scene setup with custom background colour.
+
+
 
 
 

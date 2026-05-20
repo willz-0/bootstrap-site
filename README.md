@@ -63,6 +63,8 @@ Final Scene
 
 Large outdoor environment created using terrain, houses, trees, and sky textures.
 
+![Terrain Code](./Screenshot%202026-05-21%20at%2000.10.27.png)
+
 
 
 

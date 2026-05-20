@@ -1,3 +1,6 @@
+
+
+
 Babylon.js Coursework Documentation
 
 BANNER ID: B01723287
@@ -19,5 +22,6 @@ Technologies Used:
 
 * Scene Setup
 The scene begins by creating a canvas and Babylon engine:
+![Scene Screenshot 1](Screenshot%202026-05-19%20at%2020.08.14.png)
 
 

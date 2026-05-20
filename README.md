@@ -63,7 +63,14 @@ Final Scene
 
 Large outdoor environment created using terrain, houses, trees, and sky textures.
 
+Height map terrain used to create hills and landscape variation.
 ![Terrain Code](./Screenshot%202026-05-21%20at%2000.10.27.png)
+
+Sprites and Environment
+![Sprite System](./Screenshot%202026-05-21%20at%2000.11.05.png)
+SpriteManager used for trees and environmental objects to improve performance.
+
+
 
 
 

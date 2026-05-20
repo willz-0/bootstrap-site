@@ -35,6 +35,12 @@ The background colour is customised using:
 Camera System
 An ArcRotateCamera was used to allow the user to rotate around the scene.
 
+![ArcRotate Camera](Screenshot%202026-05-20%20at%2022.00.09\(1\).png)
+This camera gives the user full control over viewing angles.
+
+Lighting and Shadows
+A directional light was added:
+
 
 
 

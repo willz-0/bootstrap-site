@@ -43,6 +43,9 @@ Camera and Lighting:
 
 ArcRotateCamera and directional lighting used to control the scene view and create shadows.
 
+Result:
+Element 1 successfully demonstrates basic Babylon.js scene creation, textures, lighting, shadows, and animation.
+
 
 
 

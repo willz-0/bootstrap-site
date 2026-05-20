@@ -46,6 +46,19 @@ ArcRotateCamera and directional lighting used to control the scene view and crea
 Result:
 Element 1 successfully demonstrates basic Babylon.js scene creation, textures, lighting, shadows, and animation.
 
+Element 2 – Environment Creation
+Aim:
+The aim of Element 2 was to create a larger outdoor environment using terrain, skyboxes, houses, and sprites.
+
+Features:
+* Height map terrain
+* Sky environment
+* Tree and palm sprites
+* Multiple houses
+* Improved camera controls
+
+Final Scene: 
+
 
 
 

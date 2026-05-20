@@ -25,8 +25,10 @@ The scene begins by creating a canvas and Babylon engine:
 ![Canvas and Engine Setup](Screenshot%202026-05-19%20at%2021.45.55.png)
 
 A scene object is then created:
+![Scene Clear Color](Screenshot%202026-05-20%20at%2021.59.21.png)
 
 The background colour is customised using:
+
 
 Camera System
 An ArcRotateCamera was used to allow the user to rotate around the scene.

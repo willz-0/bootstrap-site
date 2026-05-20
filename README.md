@@ -26,7 +26,7 @@ Features
 * Animation system
   
 Final Scene:
-![Final Scene](./Screenshot%202026-05-20%20at%2023.36.40.png)
+![Element 2 Final Scene](./Screenshot%202026-05-21%20at%2000.09.06.jpeg)
 
 
 Scene Setup Code

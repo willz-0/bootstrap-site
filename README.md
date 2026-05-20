@@ -26,7 +26,7 @@ Features
 * Animation system
   
 Final Scene:
-https://github.com/willz-0/bootstrap-site/blob/main/Screenshot%202026-05-20%20at%2023.36.40.png?raw=true
+![Final Scene](./Screenshot%202026-05-20%20at%2023.36.40.png)
 
 
 

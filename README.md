@@ -57,8 +57,11 @@ Features:
 * Multiple houses
 * Improved camera controls
 
-Final Scene: 
-![Element 2 Scene](https://github.com/willz-0/bootstrap-site/blob/main/YOUR-SCENE-IMAGE.png?raw=true)
+Final Scene
+
+![Element 2 Final Scene](./YOUR-FILENAME.png)
+
+Large outdoor environment created using terrain, houses, trees, and sky textures.
 
 
 

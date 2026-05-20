@@ -1,45 +1,31 @@
-
-
-
 Babylon.js Coursework Documentation
 
-BANNER ID: B01723287
-ARROL SOFFACK
+Introduction:
 
-Introduction
+This coursework project was developed using Babylon.js to create interactive 3D environments inside a web browser. Each element introduced new features such as textures, terrain, physics, collisions, imported models, and player interaction systems.
 
-This coursework project was created using Babylon.js to demonstrate the development of interactive 3D environments inside a web browser. The project is divided into multiple elements, with each element building on previous knowledge and introducing new functionality such as 3D objects, environments, physics, collisions, character movement, imported models, and interaction systems.
+The project was built using:
 
-The project uses HTML, JavaScript, and the Babylon.js framework to render real-time 3D scenes using WebGL. Each element contains its own index.html and main.js file to separate functionality and make the project easier to manage and test.
-
-Element 1 – Basic Shapes and Scene Setup
-Aim: The aim of Element 1 was to create a simple Babylon.js scene containing primitive 3D objects, textures, lighting, shadows, and animation.
-
-Technologies Used:
-* HTML5
+* HTML
 * JavaScript
-* Babylon.js CDN
+* Babylon.js
 
-* Scene Setup
-The scene begins by creating a canvas and Babylon engine:
-![Canvas and Engine Setup](Screenshot%202026-05-19%20at%2021.45.55.png)
+  Element 1 – Basic Shapes and Scene Setup
 
-A scene object is then created:
+Aim
 
-![Scene Clear Color](Screenshot%202026-05-20%20at%2021.59.21.png)
+The aim of Element 1 was to create a simple Babylon.js scene using primitive meshes, textures, lighting, shadows, and animation.
 
-The background colour is customised using:
+Features
 
-![ArcRotate Camera](Screenshot%202026-05-20%20at%2022.00.09.png)
+* ArcRotateCamera
+* Directional lighting
+* Shadows
+* Textured ground
+* Cube and sphere meshes
+* Animation system
+Final Scene:
 
-Camera System
-An ArcRotateCamera was used to allow the user to rotate around the scene.
-
-![ArcRotate Camera](Screenshot%202026-05-20%20at%2022.00.09\(1\).png)
-This camera gives the user full control over viewing angles.
-
-Lighting and Shadows
-A directional light was added:
 
 
 

@@ -94,6 +94,8 @@ Physics and Collisions:
 
 Gravity and collision detection were added so the player and objects can interact properly.
 
+Character Import and Movement:
+
 
 
 

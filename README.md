@@ -98,6 +98,14 @@ Character Import and Movement:
 ![Character Movement Code](./element3-movement.jpg)
 
 Movement Controls:
+![Movement Controls](./element3-controls.jpg)
+
+Keyboard input was added using ActionManager to move and rotate the player.
+
+Push Box Physics:
+![Push Box Code](./element3-pushbox.jpg)
+
+The player can push the physics box when close enough using impulses and collision detection.
 
 
 

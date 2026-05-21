@@ -116,7 +116,9 @@ Element 4 – GUI, Audio, Logic
 This element demonstrates GUI systems, movement logic, jumping, and health mechanics using Babylon.js.
 
 Final Scene:
+![Element 4 Scene](element4-scene.jpg)
 
+GUI – Health Bar:
 
 
 

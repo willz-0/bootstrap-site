@@ -97,6 +97,9 @@ Gravity and collision detection were added so the player and objects can interac
 Character Import and Movement:
 ![Character Movement Code](./element3-movement.jpg)
 
+Movement Controls:
+
+
 
 
 

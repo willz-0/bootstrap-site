@@ -88,6 +88,10 @@ Features:
 Final Scene:
 ![Element 3 Final Scene](./element3-scene.jpg)
 
+Physics and Collisions:
+
+![Physics Code](./element3-physics.jpg)
+
 
 
 

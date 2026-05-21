@@ -140,6 +140,33 @@ Result
 
 The GUI and gameplay systems worked successfully. The player could move, jump, collide with objects, and lose health dynamically while the health bar updated correctly on screen.
 
+Element 5 demonstrates scene switching in Babylon.js.
+
+Scene A Code
+
+![Scene A](e5-sceneA.jpg)
+
+Scene A contains a rotating box with a green background and hemispheric lighting.
+
+ Scene B Code
+
+![Scene B](e5-sceneB.jpg)
+
+Scene B contains an animated sphere with directional lighting and GUI text instructions.
+
+Scene Switching Logic
+
+![Switch Logic](e5-switch.jpg)
+
+Keyboard input was implemented using event listeners:
+- Press 1 switches to Scene A
+- Press 2 switches to Scene B
+
+The switchScene() function disposes of the current scene and loads the selected scene dynamically.
+
+Result:
+Scene switching worked successfully. Different objects, lighting setups, animations, and GUI elements were displayed correctly between both scenes.
+
 
 
 

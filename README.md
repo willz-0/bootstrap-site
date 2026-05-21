@@ -119,25 +119,26 @@ Final Scene:
 ![Element 4 Scene](element4-scene.jpg)
 
 GUI – Health Bar:
+
 ![GUI Code](element4-gui.jpg)
 
 A GUI health bar was created using Babylon GUI controls. The health bar updates dynamically during gameplay.
+
 Movement and Jump Logic:
+
 ![Movement Code](element4-movement.jpg)
 
 Keyboard input was implemented for movement and jumping using collision detection and gravity.
+
 Health / Damage Logic:
+
 ![Logic Code](element4-logic.jpg)
 
 The player loses health when colliding with the obstacle, and the GUI health bar updates in real time.
 
-Result:
+Result
+
 The GUI and gameplay systems worked successfully. The player could move, jump, collide with objects, and lose health dynamically while the health bar updated correctly on screen.
-
-
-
-
-
 
 
 

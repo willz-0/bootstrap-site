@@ -126,13 +126,13 @@ A GUI health bar was created using Babylon GUI controls. The health bar updates 
 
 Movement and Jump Logic:
 
-![Movement Code](element4-movement.jpg)
+![Movement Code](e4-movement.jpg)
 
 Keyboard input was implemented for movement and jumping using collision detection and gravity.
 
 Health / Damage Logic:
 
-![Logic Code](element4-logic.jpg)
+![Logic Code](e4-logic.jpg)
 
 The player loses health when colliding with the obstacle, and the GUI health bar updates in real time.
 

@@ -89,17 +89,6 @@ Final Scene:
 ![Element 3 Final Scene](./element3-scene.jpg)
 
 
-Physics and Collisions:
-
-![Physics Code](./element3-physics.jpg)
-
-Gravity and collision detection were added so the player and objects can interact properly.
-
-Character Import and Movement:
-
-![Character Movement Code](./element3-movement.jpg)
-
-The player model is imported, attached to the camera, and controlled using keyboard input.
 
 
 

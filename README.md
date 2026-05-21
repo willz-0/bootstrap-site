@@ -107,6 +107,10 @@ Push Box Physics:
 
 The player can push the physics box when close enough using impulses and collision detection.
 
+Result
+
+The interaction system was successful because the player can move smoothly using keyboard controls and interact with physics objects in real time. Gravity and collision detection helped create a more realistic environment, while the push box mechanic demonstrated working physics interactions using impulses.
+
 
 
 

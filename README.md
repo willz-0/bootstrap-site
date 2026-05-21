@@ -111,6 +111,12 @@ Result
 
 The interaction system was successful because the player can move smoothly using keyboard controls and interact with physics objects in real time. Gravity and collision detection helped create a more realistic environment, while the push box mechanic demonstrated working physics interactions using impulses.
 
+Element 4 – GUI, Audio, Logic
+
+This element demonstrates GUI systems, movement logic, jumping, and health mechanics using Babylon.js.
+
+Final Scene:
+
 
 
 

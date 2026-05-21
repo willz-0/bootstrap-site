@@ -92,6 +92,8 @@ Physics and Collisions:
 
 ![Physics Code](./element3-physics.jpg)
 
+Gravity and collision detection were added so the player and objects can interact properly.
+
 
 
 

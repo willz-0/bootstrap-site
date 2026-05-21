@@ -160,9 +160,16 @@ Scene Switching Logic
 
 Keyboard input was implemented using event listeners:
 - Press 1 switches to Scene A
+  
 - Press 2 switches to Scene B
 
 The switchScene() function disposes of the current scene and loads the selected scene dynamically.
+
+### Scene A Result
+![Scene A Result](element5-sceneA.jpg)
+
+### Scene B Result
+![Scene B Result](element5-sceneB.jpg)
 
 Result:
 Scene switching worked successfully. Different objects, lighting setups, animations, and GUI elements were displayed correctly between both scenes.

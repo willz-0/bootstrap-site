@@ -119,7 +119,7 @@ Final Scene:
 ![Element 4 Scene](element4-scene.jpg)
 
 GUI – Health Bar:
-![GUI Code](element4-gui.jpg)
+
 
 A GUI health bar was created using Babylon GUI controls. The health bar updates dynamically during gameplay.
 Movement and Jump Logic:

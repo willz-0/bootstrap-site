@@ -86,6 +86,7 @@ Features:
 * Pushable physics box
 
 Final Scene:
+![Element 3 Final Scene](./element3-scene.jpg)
 
 
 

@@ -86,7 +86,7 @@ const createScene = () => {
     const guiTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
 
     const panel = new BABYLON.GUI.Rectangle();
-    panel.width = "300px";
+    panel.width = "200px";
     panel.height = "30px";
     panel.cornerRadius = 5;
     panel.color = "white";

@@ -177,15 +177,6 @@ if (distanceToHealBox < 2.2) {
     health = 100;
     healthBar.width = "300px";
 }
-if (health > 60) {
-    healthBar.background = "green";
-} else if (health > 30) {
-    healthBar.background = "yellow";
-} else {
-    healthBar.background = "red";
-}
-    return scene;
-});
 
 const scene = createScene();
 

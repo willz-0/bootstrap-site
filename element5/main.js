@@ -36,16 +36,7 @@ const createSceneA = () => {
         scene
     );
     box.position.y = 1;
-    const portal = BABYLON.MeshBuilder.CreateCylinder(
-    "portal",
-    { height: 5, diameter: 3 },
-    scene
-);
-
-portal.position = new BABYLON.Vector3(0, 2, -3);
-const portalMat = new BABYLON.StandardMaterial("portalMat", scene);
-portalMat.emissiveColor = new BABYLON.Color3(0, 0, 1);
-portal.material = portalMat;
+   
     scene.registerBeforeRender(() => {
         box.rotation.y += 0.02;
     });

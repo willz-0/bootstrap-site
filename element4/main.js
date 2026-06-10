@@ -186,7 +186,7 @@ if (distanceToBox < 2.2) {
     health -= 0.2;
     health = Math.max(health, 0);
     healthBar.width = (health * 2) + "px";
-});
+
 
     return scene;
 };

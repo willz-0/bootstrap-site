@@ -187,7 +187,6 @@ if (distanceToBox < 2.2) {
     health = Math.max(health, 0);
     healthBar.width = (health * 2) + "px";
 }
-    });
     const distanceToHealBox = BABYLON.Vector3.Distance(
     player.position,
     healBox.position
@@ -197,7 +196,7 @@ if (distanceToHealBox < 2.2) {
     health += 2;
     health = Math.min(health, 100);
     healthBar.width = (health * 2) + "px";
-});
+}
 
     return scene;
 };

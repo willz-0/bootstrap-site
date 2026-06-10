@@ -85,6 +85,18 @@ box.material = boxMat;
     /* =========================
        GUI – HEALTH BAR
     ========================= */
+    const healBox = BABYLON.MeshBuilder.CreateBox(
+    "healBox",
+    { size: 1.5 },
+    scene
+);
+
+healBox.position = new BABYLON.Vector3(4, 0.75, 2);
+
+const healMat = new BABYLON.StandardMaterial("healMat", scene);
+healMat.diffuseColor = new BABYLON.Color3(0, 1, 0);
+
+healBox.material = healMat;
     const guiTexture =
         BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
 

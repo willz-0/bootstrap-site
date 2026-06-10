@@ -99,7 +99,7 @@ const createScene = () => {
     guiTexture.addControl(panel);
 
     const healthBar = new BABYLON.GUI.Rectangle();
-    healthBar.width = "160px";
+    healthBar.width = "200px";
     healthBar.height = "20px";
     healthBar.background = "green";
     healthBar.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;

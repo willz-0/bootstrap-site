@@ -194,7 +194,7 @@ if (distanceToBox < 2.2) {
 );
 
 if (distanceToHealBox < 2.2) {
-    health += 0.4;
+    health += 2;
     health = Math.min(health, 100);
     healthBar.width = (health * 2) + "px";
 });

@@ -185,7 +185,7 @@ if (health > 60) {
     healthBar.background = "red";
 }
     return scene;
-};
+});
 
 const scene = createScene();
 

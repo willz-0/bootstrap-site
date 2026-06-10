@@ -79,12 +79,7 @@ ground.material = groundMat;
     box.position = new BABYLON.Vector3(0, 0.75, 2);
     box.checkCollisions = true;
     const boxMat = new BABYLON.StandardMaterial("boxMat", scene);
-
-boxMat.diffuseTexture = new BABYLON.Texture(
-    "../element2/textures/wood.jpg",
-    scene
-);
-
+boxMat.diffuseColor = new BABYLON.Color3(1, 0, 0);
 box.material = boxMat;
 
     /* =========================

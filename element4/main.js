@@ -199,7 +199,7 @@ if (distanceToHealBox < 2.2) {
 }
 
     return scene;
-};
+});
 
 const scene = createScene();
 

@@ -174,10 +174,10 @@ const createScene = () => {
 
         const distanceToHealBox = BABYLON.Vector3.Distance(player.position, healBox.position);
 
-        if (distanceToHealBox < 2.2) {
-            health += 0.4;
-            health = Math.min(health, 100);
-            healthBar.width = (health * 1.6) + "px";
+if (distanceToHealBox < 2.2) {
+    health = 100;
+    healthBar.width = "160px";
+    
         }
     });
 

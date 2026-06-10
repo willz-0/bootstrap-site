@@ -176,7 +176,7 @@ const createScene = () => {
 
 if (distanceToHealBox < 2.2) {
     health = 100;
-    healthBar.width = "500px";
+    healthBar.width = "200px";
     
         }
     });

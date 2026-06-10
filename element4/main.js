@@ -181,7 +181,7 @@ if (health > 60) {
     healthBar.background = "green";
 } else if (health > 30) {
     healthBar.background = "yellow";
-else {
+} else {
     healthBar.background = "red";
 }
     return scene;

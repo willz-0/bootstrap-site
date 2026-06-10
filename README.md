@@ -1,178 +1,24 @@
-Babylon.js Coursework Documentation
+## Element 5 – Multiple Scene Switching
 
-Introduction:
+The purpose of Element 5 was to demonstrate scene management within Babylon.js. Rather than creating a single environment, two separate scenes were developed that can be loaded and unloaded dynamically. This demonstrates how Babylon.js can manage multiple independent scenes within the same application.
 
-This coursework project was developed using Babylon.js to create interactive 3D environments inside a web browser. Each element introduced new features such as textures, terrain, physics, collisions, imported models, and player interaction systems.
+Scene A contains a rotating cube positioned above a ground plane. A hemispheric light is used to illuminate the scene and a green background colour was selected to visually distinguish it from the second scene. The cube rotates continuously through the use of the registerBeforeRender() function, which updates the object's rotation before each frame is rendered.
 
-The project was built using:
+Scene B contains a sphere positioned above a ground plane with a blue background. The sphere rotates and moves vertically using a sine function to create a floating animation effect. GUI text is displayed to inform the user that they can return to Scene A by pressing the appropriate key.
 
-* HTML
-* JavaScript
-* Babylon.js
+A scene switching system was implemented through a dedicated switchScene() function. This function first disposes of the currently active scene before creating and loading the selected scene. Disposing of unused scenes is important as it removes meshes, materials and textures from memory, helping to maintain performance and prevent unnecessary resource usage.
 
-  Element 1 – Basic Shapes and Scene Setup
+Keyboard input was implemented using a keydown event listener. Pressing the "1" key loads Scene A, while pressing the "2" key loads Scene B. This provides a simple but effective method of demonstrating scene transitions and user interaction.
 
-Aim
+The Babylon.js render loop continuously checks whether a scene is active before rendering. This ensures that only one scene is displayed at a time and prevents conflicts between multiple scenes.
 
-The aim of Element 1 was to create a simple Babylon.js scene using primitive meshes, textures, lighting, shadows, and animation.
+During development, one challenge was ensuring that scene transitions occurred smoothly without leaving previous objects active in memory. This issue was resolved by disposing of the active scene before creating the next one. This approach keeps the application organised and efficient.
 
-Features
+If the project were expanded further, additional scenes could be added alongside transition effects such as fade animations, loading screens or interactive portals. These features would provide a more immersive user experience while building upon the scene management system implemented in this element.
 
-* ArcRotateCamera
-* Directional lighting
-* Shadows
-* Textured ground
-* Cube and sphere meshes
-* Animation system
-  
-Final Scene:
-![Final Scene](./Screenshot%202026-05-20%20at%2023.36.40.png)
+### Conclusion
 
-
-Scene Setup Code
-
-![Scene Setup](./Screenshot%202026-05-20%20at%2023.41.00.png)
-
-Babylon.js engine and scene setup with custom background colour.
-
-Camera and Lighting:
-
-![Camera](./Screenshot%202026-05-20%20at%2023.41.45.png)
-
-![Lighting](./Screenshot%202026-05-20%20at%2023.42.32.png)
-
-ArcRotateCamera and directional lighting used to control the scene view and create shadows.
-
-Result:
-Element 1 successfully demonstrates basic Babylon.js scene creation, textures, lighting, shadows, and animation.
-
-Element 2 – Environment Creation
-Aim:
-The aim of Element 2 was to create a larger outdoor environment using terrain, skyboxes, houses, and sprites.
-
-Features:
-* Height map terrain
-* Sky environment
-* Tree and palm sprites
-* Multiple houses
-* Improved camera controls
-
-Final Scene
-
-![Element 2 Final Scene](./element2-scene.jpg)
-
-Large outdoor environment created using terrain, houses, trees, and sky textures.
-
-Height map terrain used to create hills and landscape variation.
-![Terrain Code](./Screenshot%202026-05-21%20at%2000.10.27.png)
-
-Sprites and Environment
-
-![Sprite System](./Screenshot%202026-05-21%20at%2000.11.05.png)
-
-SpriteManager used for trees and environmental objects to improve performance.
-
-Element 3 – Interaction and Physics
-Aim:
-The aim of Element 3 was to implement collisions, physics, imported models, player movement, and object interaction.
-
-Features:
-
-* Physics engine
-* Follow camera
-* Imported player model
-* Collision systems
-* Keyboard movement
-* Pushable physics box
-
-Final Scene:
-![Element 3 Final Scene](./element3-scene.jpg)
-
-Physics and Collisions:
-
-![Physics Code](./element3-physics.jpg)
-
-Gravity and collision detection were added so the player and objects can interact properly.
-
-Character Import and Movement:
-![Character Movement Code](./element3-movement.jpg)
-
-Movement Controls:
-![Movement Controls](./element3-controls.jpg)
-
-Keyboard input was added using ActionManager to move and rotate the player.
-
-Push Box Physics:
-![Push Box Code](./element3-pushbox.jpg)
-
-The player can push the physics box when close enough using impulses and collision detection.
-
-Result
-
-The interaction system was successful because the player can move smoothly using keyboard controls and interact with physics objects in real time. Gravity and collision detection helped create a more realistic environment, while the push box mechanic demonstrated working physics interactions using impulses.
-
-Element 4 – GUI, Audio, Logic
-
-This element demonstrates GUI systems, movement logic, jumping, and health mechanics using Babylon.js.
-
-Final Scene:
-![Element 4 Scene](element4-scene.jpg)
-
-GUI – Health Bar:
-
-![GUI Code](e4-gui.jpg)
-
-A GUI health bar was created using Babylon GUI controls. The health bar updates dynamically during gameplay.
-
-Movement and Jump Logic:
-
-![Movement Code](e4-movement.jpg)
-
-Keyboard input was implemented for movement and jumping using collision detection and gravity.
-
-Health / Damage Logic:
-
-![Logic Code](e4-logic.jpg)
-
-The player loses health when colliding with the obstacle, and the GUI health bar updates in real time.
-
-Result
-
-The GUI and gameplay systems worked successfully. The player could move, jump, collide with objects, and lose health dynamically while the health bar updated correctly on screen.
-
-Element 5 demonstrates scene switching in Babylon.js.
-
-Scene A Code
-
-![Scene A](e5-sceneA.jpg)
-
-Scene A contains a rotating box with a green background and hemispheric lighting.
-
- Scene B Code
-
-![Scene B](e5-sceneB.jpg)
-
-Scene B contains an animated sphere with directional lighting and GUI text instructions.
-
-Scene Switching Logic
-
-![Switch Logic](e5-switch.jpg)
-
-Keyboard input was implemented using event listeners:
-- Press 1 switches to Scene A
-  
-- Press 2 switches to Scene B
-
-The switchScene() function disposes of the current scene and loads the selected scene dynamically.
-
-### Scene A Result
-![Scene A Result](element5-sceneA.jpg)
-
-### Scene B Result
-![Scene B Result](element5-sceneB.jpg)
-
-Result:
-Scene switching worked successfully. Different objects, lighting setups, animations, and GUI elements were displayed correctly between both scenes.
+Element 5 successfully demonstrates the use of multiple scenes within Babylon.js and the ability to switch between them using keyboard input. The implementation shows an understanding of scene creation, scene disposal, animation, user interaction and rendering. This element provides a solid foundation for more advanced scene management systems that could be developed in future projects.
 
 
 

@@ -177,20 +177,18 @@ if (distanceToHealBox < 2.2) {
     health = 100;
     healthBar.width = "300px";
 }
-
+if (health <= 0) {
+    player.position.x = 0;
+    player.position.z = 0;
+    health = 100;
+    healthBar.width = "300px";
+}
 if (health > 60) {
     healthBar.background = "green";
 } else if (health > 30) {
     healthBar.background = "yellow";
 else {
     healthBar.background = "red";
-}
-
-if (health <= 0) {
-    player.position.x = 0;
-    player.position.z = 0;
-    health = 100;
-    healthBar.width = "300px";
 }
     return scene;
 };
